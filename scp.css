@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10pt;
+  background-color: #444444;
+  background-image: url(images/SCP-BG-Hatch.png);
+}
+
+a {
+  color: #400000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+img {
+  border: 0;
+}
+
+form label {
+  font-size: 8pt;
+  font-weight: bold;
+  color: #800000;
+}
+
+form input, form select, form textarea {
+  border: solid 1px #800000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+form input.primary {
+  font-weight: bold;
+  color: #800000;
+}
+
+form input[readonly] {
+  color: #C08080;
+}
+
+form div.cue {
+  display: block;
+  float: right;
+  width: 260px;
+  padding: 5px 10px 5px 10px;
+  border: dashed 1px #C04040;
+  font-size: 8pt;
+  color: #800000;
+  background-image: url(images/SCP-BG-Hatch-Red.png);
+}
+
+.mono {
+  font-family: Courier New, monospace;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+li.invalid {
+  color: #808080;
+}
+
+li.invalid a {
+  color: #C08080;
+}
+
+div.centered {
+  width: 800px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -400px;
+}
+
+div.backdrop {
+  width: 800px;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -401px;
+  background-color: #FFFFFF;
+  border-left: solid 1px #000000;
+  border-right: solid 1px #000000;
+}
+
+div.notice {
+  color: #404040;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #F0F0F0;
+  background-image: url(images/SCP-BG-Hatch.png);
+  border-top: dashed 1px #404040;
+  border-bottom: dashed 1px #404040;
+  padding: 10px 50px 10px 50px;
+}
+
+div.notice div.title {
+  color: #404040;
+  font-size: 30pt;
+}
+
+div.warning {
+  text-align: center;
+  color: #400000;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #FFF0F0;
+  background-image: url(images/SCP-BG-Hatch.png);
+  border-top: dashed 1px #400000;
+  border-bottom: dashed 1px #400000;
+  padding: 10px 0px 10px 0px;
+}
+
+div.warning div.classified {
+  text-align: center;
+  color: #400000;
+  font-size: 50pt;
+}
+
+div.keter {
+  color: #400000;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #FFF0F0;
+  background-image: url(images/SCP-BG-Hatch.png);
+  border-top: dashed 1px #400000;
+  border-bottom: dashed 1px #400000;
+  padding: 10px 50px 10px 50px;
+}
+
+div.keter div.title {
+  color: #400000;
+  font-size: 30pt;
+}
+
+div.keter div.tags a {
+  color: #400000;
+}
+
+div.euclid {
+  color: #404000;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #FFFFF0;
+  background-image: url(images/SCP-BG-Hatch.png);
+  border-top: dashed 1px #404000;
+  border-bottom: dashed 1px #404000;
+  padding: 10px 50px 10px 50px;
+}
+
+div.euclid div.title {
+  color: #404000;
+  font-size: 30pt;
+}
+
+div.euclid div.tags a {
+  color: #404000;
+}
+
+div.safe {
+  color: #004000;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #F0FFF0;
+  background-image: url(images/SCP-BG-Hatch.png);
+  border-top: dashed 1px #004000;
+  border-bottom: dashed 1px #004000;
+  padding: 10px 50px 10px 50px;
+}
+
+div.safe div.title {
+  color: #004000;
+  font-size: 30pt;
+}
+
+div.safe div.tags a {
+  color: #004000;
+}
+
+div.notice div.subtitle, div.keter div.subtitle, div.euclid div.subtitle, div.safe div.subtitle {
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+div.notice div.tags, div.keter div.tags, div.euclid div.tags, div.safe div.tags {
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+div.header {
+  height: 45px;
+  padding: 0px 50px 0px 50px;
+  margin: 10px 0px 10px 0px;
+}
+
+div.header img {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-right: 10px;
+}
+
+div.header .title {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+div.header .subtitle {
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+div.centered div.content {
+  padding: 20px 50px 0px 50px;
+}
+
+div.centered div.content div.scpimage {
+  display: block;
+  float: right;
+  border: solid 1px #400000;
+  color: #400000;
+  background-color: #FFFFFF;
+  background-image: url(images/SCP-BG-Hatch.png);
+  font-size: 8pt;
+  font-weight: bold;
+  margin: 0px 0px 10px 10px;
+  text-align: center;
+}
+
+div.centered div.content div.scpimage img {
+  width: 300px;
+}
+
+div.centered div.content div.scpimage .label {
+  width: 300px;
+}
+
+div.centered div.content div.critical {
+  color: #800000;
+}
+
+div.centered div.content div.heading {
+  border-bottom: solid 1px #400000;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #400000;
+  margin-bottom: 5px;
+}
+
+div.centered div.content div.break {
+  margin-top: 20px;
+}
+
+div.mainitem {
+  margin-bottom: 10px;
+}
+
+div.mainitem div {
+  text-align: center;
+}
+
+div.mainitem img {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+
+div.mainitem a.primary {
+  font-size: 12pt;
+}
+
+div.mainitem a.secondary {
+  font-size: 8pt;
+}
+
+div.mainsplash {
+  height: 200px;
+  border-bottom: dashed 1px #808080;
+  background-image: url(images/SCP-Banner2.png);
+}
+
+div.mainsplash .title {
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+div.mainsplash .subtitle {
+  font-size: 12pt;
+  color: #400000;
+}
+
+div.footer {
+  height: 20px;
+  padding: 0px 50px 0px 50px;
+  border-top: dashed 1px #808080;
+  margin-top: 20px;
+  color: #808080;
+  font-size: 7pt;
+}
+
+table {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+table td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+table thead td {
+  border-bottom: solid 1px #400000;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #400000;
+}
+
+table tfoot td {
+  border-top: solid 1px #400000;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #400000;
+}
+
+table td.subtext {
+  font-size: 8pt;
+  color: #808080;
+}
+gin: 0;
+  padding: 0;
+}
+
+table thead td {
+  border-bottom: solid 1px #400000;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #400000;
+}
+
+table tfoot td {
+  border-top: solid 1px #400000;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #400000;
+}
+
+blockquote {
+  margin: 10px 20px 10px 20px;
+  padding: 5px 10px 5px 10px;
+  border: dashed 1px #804040;
+  color: #400000;
+  background-color: #F4F0F0;
+  /*background-image: url(images/SCP-BG-Hatch-Red.png);*/
+}
